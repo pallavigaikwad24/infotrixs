@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg, rgb(14, 90, 126), rgb(46, 179, 241));
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    height: 3em;
+    padding: 5px;
+}
+
+.rightSec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin-right: 10px;
+}
+
+p+i {
+    background-color: rgb(243, 240, 240);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 150px;
+    height: 100px;
+}
+
+.search {
+    margin-left: 10px;
+    background-color: rgb(243, 240, 240);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.search>input {
+    border: none;
+    background-color: rgb(243, 240, 240);
+    padding: 4px;
+}
+
+.search>i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.middleSec {
+    margin-left: 220px;
+    margin-top: 20px;
+}
+
+.topSec>.btn,
+.today {
+    border: none;
+    padding: 8px;
+    margin-right: 15px;
+    border-radius: 5px;
+    opacity: 0.6;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.today:hover {
+    opacity: 1;
+}
+
+.location {
+    color: white;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.locName {
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.locName h1 {
+    margin-right: 25px;
+}
+
+.locName i {
+    margin-top: 5px;
+    opacity: 0.7;
+}
+
+.date {
+    color: white;
+    margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.weatherinfo {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.178);
+    margin-top: 60px;
+    border-radius: 5px;
+}
+
+.weatherinfoMedia {
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.178);
+    margin-top: 60px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+}
+
+.firstRow {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.315);
+}
+
+.right {
+    border-right: 1px solid rgba(255, 255, 255, 0.315);
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.temp {
+    width: 50%;
+    height: 50%;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.temp h1 {
+    color: white;
+}
+
+.degree {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.degree p {
+    color: white;
+    opacity: 0.7;
+    padding: 10px;
+    font-size: 12px;
+    border-left: 1px solid white;
+}
+
+.temp img {
+    width: 200px;
+    height: 200px;
+    margin-right: 100px;
+}
+
+.moreInfo {
+    width: 70%;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.moreInfo table {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.moreInfo table tr td {
+    color: black;
+}
+
+.size {
+    font-size: 20px;
+}
+
+.moreInfo i {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.moreInfo table tr td:hover {
+    background-color: rgb(255, 69, 2);
+    border-radius: 10px;
+    color: white;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+footer p {
+    padding: 30px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.cityInfoMedia {
+    display: none;
+}
+
+.tempMedia {
+    margin: 50px;
+}
+
+.tempMedia img {
+    width: 200px;
+    height: 200px;
+}
+
+.degreeMedia {
+    margin-left: 20px;
+    color: white;
+}
+
+.media {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .rightSec p {
+        display: none;
+    }
+    .rightSec p+i {
+        display: none;
+    }
+    .search {
+        display: none;
+    }
+    .middleSec {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .media {
+        margin-top: 10px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .media>i {
+        margin-top: 5px;
+    }
+    .btn {
+        display: none;
+    }
+    .today {
+        margin: 10px;
+        opacity: 1;
+    }
+    .cityInfo {
+        display: none;
+    }
+    .cityInfoMedia {
+        display: block;
+    }
+    .temp {
+        display: none;
+    }
+    .moreInfo {
+        display: none;
+    }
+}
